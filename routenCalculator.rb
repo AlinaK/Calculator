@@ -18,9 +18,9 @@ def routeCalculation(meineRoute)         #In der routeCalculation Methode erhäl
           return "Es gibt keine Route"                          #und wenn es sie nicht gibt, wird "Es gibt keine Route" ausgegeben; return> Ende der Methode
         end
     end
-     summe += tmp                  #Die einzelnen Laengen werden aufsummiert.
+     summe += tmp                  #hier wirds berechnet
   end
-  return summe                     #summe wird ausgegeben
+  return summe                     #Summe
 end
 
 puts routeCalculation("A-B-C")
