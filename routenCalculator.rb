@@ -6,7 +6,7 @@
   @route[tmp[0]] = tmp[1]          
 end
 
-def routeCalculation(meineRoute)         #In der routeCalculation Methode erhält einen String 
+def routeCalculation(meineRoute)         #die routeCalculation Methode erhält einen String 
   summe = 0
   meineRoute = meineRoute.split('-')      #der String wird dann gesplittet
   0.upto(meineRoute.length - 2) do |i|
