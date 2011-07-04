@@ -12,12 +12,11 @@ def routeCalculation(meineRoute)         #In der routeCalculation Methode erhäl
   0.upto(meineRoute.length - 2) do |i|
 
     tmp = @route[meineRoute[i] + '-' + meineRoute[i+1]].to_i    #Hier wird überprüft, ob es eine Strecke zwischen A-B gibt 
-    if(tmp == 0)                                        
-      tmp = @route[meineRoute[i+1] + '-' + meineRoute[i]].to_i  #wenn nich, dann wird überprüft, ob es eine Strecke zwischen B-A gibt
+    
         if(tmp == 0)                                      
           return "Es gibt keine Route"                          #und wenn es sie nicht gibt, wird "Es gibt keine Route" ausgegeben; return> Ende der Methode
         end
-    end
+    
      summe += tmp                  #hier wirds berechnet
   end
   return summe                     #Summe
